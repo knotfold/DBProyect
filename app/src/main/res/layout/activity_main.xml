@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cool2bgoodgav.warcr.dbproyect.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/buttonAA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PruebaAdmin"
+                android:onClick="addAdmin"/>
+
+            <Button
+                android:id="@+id/buttonAU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRUEBAUSER"
+                android:onClick="addCliente"/>
+
+            <Button
+                android:id="@+id/buttonAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRUEBARES"
+                android:onClick="addRes"/>
+
+            <Button
+                android:id="@+id/buttonAP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRUEBAPROMO"
+                android:onClick="addProm"/>
+
+            <Button
+                android:id="@+id/buttonAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRUEBACOMENTARIO"
+                android:onClick="addComment"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRUBEAPP"
+                android:onClick="testApp"
+                android:id="@+id/buttonPruebaApp"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

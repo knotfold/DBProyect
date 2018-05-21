@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cool2bgoodgav.warcr.dbproyect.ResDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/imageViewRes"
+                        android:layout_marginRight="200dp"
+                        android:src="@drawable/ic_launcher_background"/>
+                    <TextView
+                        android:id="@+id/textViewNombreRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:text="Desc"/>
+                    <TextView
+                        android:id="@+id/textViewUbicacionRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        />
+                    <TextView
+                        android:id="@+id/textViewHorarioRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Desc"/>
+                    <TextView
+                        android:id="@+id/textViewAforoRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        />
+                    <TextView
+                        android:id="@+id/textViewTipoRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Desc"/>
+                    <TextView
+                        android:id="@+id/textViewContactoRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Heading"
+                        android:paddingBottom="5dp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" MENU "
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_icon_arrow_left"
+                    android:drawableEnd="@drawable/ic_icon_arrow_right"
+                    android:textStyle="bold"
+                    android:paddingTop="325dp"
+                    android:paddingStart="100dp"
+                    android:paddingEnd="100dp"
+                    android:textColor="@color/TrueColor"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/ic_icon_arrow_left"
+                    android:drawableRight="@drawable/ic_icon_arrow_right" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycleViewPlatillos"
+                android:orientation="horizontal">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMENTARIOS"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/TrueColor"
+                android:fontFamily="serif-monospace"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycleViewComentsUser">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:id="@+id/recycleViewComents">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="false"
+            android:background="#FFFFFF">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nuevo comentario"
+                android:textSize="16sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="#FAFAFA"
+                android:id="@+id/editTextAddComment"
+                />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBaseline="@+id/editTextAddComment"
+                android:layout_alignBottom="@+id/editTextAddComment"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:onClick="addCommentUser"
+                android:id="@+id/buttonAddComment"
+                android:background="@drawable/icon_send_text" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
